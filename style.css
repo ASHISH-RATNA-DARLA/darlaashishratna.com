@@ -964,10 +964,13 @@ p {
   /* End Projects Section */
 
   /* Achievements Section */
+  
   #achievements .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
   #achievements .images img {
