@@ -771,6 +771,18 @@ p {
 		margin: 5% 0;
 	}
 	/* End Services Section */
+	.images {
+    	grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    	grid-template-rows: auto; /* Automatic row height */
+  	}
+
+  	.images img {
+    	width: 100%;
+    	height: auto; /* Maintain aspect ratio */
+    	object-fit: cover;
+    	object-position: top;
+    	border-radius: 8px;
+  }
 
 	/* Project */
 	#projects .project-item {
