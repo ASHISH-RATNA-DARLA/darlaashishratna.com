@@ -575,6 +575,47 @@ p {
 	h1.section-title {
 		font-size: 6rem;
 	}
+	/* Media Query For Smartphone */
+    #header .nav-list ul {
+        position: fixed;
+        background-color: rgba(31, 30, 30, 0.9);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 80px; /* Adjust the padding to avoid overlaying the header */
+        transition: 0.5s ease;
+        z-index: 9999;
+    }
+    
+    #header .nav-list ul.active {
+        left: 0;
+    }
+    
+    #header .nav-list ul a {
+        font-size: 2rem;
+        padding: 20px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    #header .hamburger {
+        display: block;
+    }
+    
+    #header .nav-list {
+        display: none;
+    }
+    
+    #header .nav-list ul li {
+        display: block;
+    }
+    
+    #header .nav-list ul a::after {
+        display: none;
+    }
+
+
 
 	/* Hero */
 	#hero h1 {
