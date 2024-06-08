@@ -757,6 +757,9 @@ p {
 	#hero {
         background-size: cover;
     }
+	#hero {
+        background-image: url(./img/bg-smartphone.jpg); 
+    }
 	#hero h1 {
 		font-size: 4rem;
 	}
