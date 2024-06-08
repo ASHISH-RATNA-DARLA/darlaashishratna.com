@@ -825,7 +825,6 @@ p {
     #achievements .images {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Two images per row */
-        grid-template-rows: repeat(4, auto); /* Four rows of images */
         gap: 10px;
     }
 
@@ -833,7 +832,7 @@ p {
         width: 100%;
         height: auto; /* Maintain aspect ratio */
         object-fit: cover;
-        object-position: top;
+        object-position: center; /* Center the image */
         border-radius: 8px;
     }
     /* End Achievements Section */
