@@ -473,8 +473,10 @@ p {
 
 #achievements .images {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Default to 2 columns for small screens */
+  gap: 10px;
+  width: 100%;
+
 }
 
 #achievements .images img {
@@ -780,6 +782,9 @@ p {
   #about .about {
     flex-direction: row;
   }
+  #achievements .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   #about .col-left {
     width: 600px;
@@ -881,6 +886,9 @@ p {
   #services .service-bottom .service-item {
     flex-basis: 22%;
     margin: 1.5%;
+  }
+    #achievements .images {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
