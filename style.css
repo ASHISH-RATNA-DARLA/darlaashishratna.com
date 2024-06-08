@@ -755,11 +755,11 @@ p {
 
 	/* Hero */
 	#hero {
-        background-size: cover;
-    }
+		background-size: cover;
+	}
 	#hero {
-        background-image: url(bg11.jpg); 
-    }
+		background-image: url(bg11.jpg); 
+	}
 	#hero h1 {
 		font-size: 4rem;
 	}
@@ -771,19 +771,7 @@ p {
 		margin: 5% 0;
 	}
 	/* End Services Section */
-	.images {
-    	grid-template-columns: repeat(2, 1fr); /* Two images per row */
-    	grid-template-rows: auto; /* Automatic row height */
-  	}
-
-  	.images img {
-    	width: 100%;
-    	height: auto; /* Maintain aspect ratio */
-    	object-fit: cover;
-    	object-position: top;
-    	border-radius: 8px;
-  }
-
+	
 	/* Project */
 	#projects .project-item {
 		flex-direction: column;
@@ -801,16 +789,22 @@ p {
 		height: auto;
 	}
 	/* End Project */
+
+	/* Achievements Section */
 	#achievements .images {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-    	#achievements .images img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* Two images per row */
+		grid-template-rows: repeat(4, auto); /* Four rows of images */
+		gap: 10px;
+	}
+	#achievements .images img {
+		width: 100%;
+		height: auto; /* Maintain aspect ratio */
+		object-fit: cover;
+		object-position: top;
+		border-radius: 8px;
+	}
+	/* End Achievements Section */
 
 	/* About */
 	#about .about {
@@ -837,7 +831,7 @@ p {
 	}
 	/* End About */
 
-	/* contact  */
+	/* Contact */
 	#contact .contact {
 		padding: 50px 0;
 	}
@@ -863,7 +857,6 @@ p {
 		text-align: center;
 		padding-left: 0;
 	}
-	/* End contact  */
+	/* End Contact */
 }
 /* End Media Query For Smartphone */
-
