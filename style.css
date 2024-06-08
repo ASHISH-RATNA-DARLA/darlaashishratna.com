@@ -712,6 +712,9 @@ p {
 	}
 
 	/* Hero */
+	#hero {
+        background-size: cover;
+    }
 	#hero h1 {
 		font-size: 4rem;
 	}
