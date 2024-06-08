@@ -822,19 +822,15 @@ p {
     /* End Projects Section */
 
     /* Achievements Section */
-    #achievements .images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two images per row */
-        gap: 10px;
-    }
-
-    #achievements .images img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover;
-        object-position: center; /* Center the image */
-        border-radius: 8px;
-    }
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .images img {
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    margin: 5px; /* Add some margin between images */
+  }
     /* End Achievements Section */
 
     /* About Section */
