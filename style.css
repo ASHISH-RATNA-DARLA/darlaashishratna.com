@@ -937,6 +937,7 @@ p {
   /* Hero */
   #hero {
     background-size: cover;
+    background-image:url(bg11.jpg);
   }
 
   #hero h1 {
