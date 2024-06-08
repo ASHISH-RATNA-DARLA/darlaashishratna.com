@@ -745,118 +745,158 @@ p {
 /* End  Media Query For Desktop */
 /* Media Query For Smartphone */
 @media only screen and (max-width: 767px) {
-	.cta {
-		font-size: 2rem;
-		padding: 15px 40px;
-	}
-	h1.section-title {
-		font-size: 3rem;
-	}
+    .cta {
+        font-size: 2rem;
+        padding: 15px 40px;
+    }
 
-	/* Hero */
-	#hero {
-		background-size: cover;
-	}
-	#hero {
-		background-image: url(bg11.jpg); 
-	}
-	#hero h1 {
-		font-size: 4rem;
-	}
-	/* End Hero */
+    h1.section-title {
+        font-size: 3rem;
+    }
 
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 100%;
-		margin: 5% 0;
-	}
-	/* End Services Section */
-	
-	/* Project */
-	#projects .project-item {
-		flex-direction: column;
-	}
-	#projects .project-item {
-		height: auto;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: auto;
-	}
-	#projects .all-projects .project-img {
-		height: auto;
-	}
-	/* End Project */
+    /* Navbar */
+    .nav-bar {
+        padding: 10px 0; /* Reduce padding */
+    }
 
-	/* Achievements Section */
-	#achievements .images {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr); /* Two images per row */
-		grid-template-rows: repeat(4, auto); /* Four rows of images */
-		gap: 10px;
-	}
-	#achievements .images img {
-		width: 100%;
-		height: auto; /* Maintain aspect ratio */
-		object-fit: cover;
-		object-position: top;
-		border-radius: 8px;
-	}
-	/* End Achievements Section */
+    .nav-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-	/* About */
-	#about .about {
-		flex-direction: column;
-	}
-	#about .col-left {
-		width: 100%;
-		height: auto;
-		padding-left: 0;
-	}
-	#about .about .col-left .about-img::after {
-		left: 0;
-		top: 0;
-		height: 0;
-		width: 0;
-		border: none;
-	}
-	#about .col-right {
-		text-align: center;
-		padding: 30px 0;
-	}
-	#about .col-right h1 {
-		text-align: center;
-	}
-	/* End About */
+    .nav-list ul li {
+        margin: 5px 0; /* Reduce margin */
+    }
 
-	/* Contact */
-	#contact .contact {
-		padding: 50px 0;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 80%;
-		margin: 5% 0;
-		flex-direction: column;
-	}
-	#contact .contact-item .icon {
-		height: 70px;
-		width: 70px;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: center;
-		padding-left: 0;
-	}
-	/* End Contact */
+    .nav-list ul li a {
+        font-size: 1.2rem; /* Reduce font size */
+        padding: 10px 20px; /* Reduce padding */
+    }
+
+    .hamburger {
+        width: 25px; /* Reduce size of hamburger icon */
+        height: 20px;
+    }
+
+    .hamburger .bar {
+        height: 3px;
+    }
+
+    /* Hero */
+    #hero {
+        background-size: cover;
+    }
+
+    #hero {
+        background-image: url(bg11.jpg); 
+    }
+
+    #hero h1 {
+        font-size: 4rem;
+    }
+    /* End Hero */
+
+    /* Services Section */
+    #services .service-bottom .service-item {
+        flex-basis: 100%;
+        margin: 5% 0;
+    }
+    /* End Services Section */
+
+    /* Projects Section */
+    #projects .project-item {
+        flex-direction: column;
+        margin-bottom: 20px; /* Add some space between project items */
+    }
+
+    #projects .project-info {
+        margin-bottom: 15px; /* Add some space below project info */
+    }
+
+    #projects .project-img {
+        width: 100%; /* Ensure project image takes full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Add border radius */
+    }
+    /* End Projects Section */
+
+    /* Achievements Section */
+    #achievements .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two images per row */
+        grid-template-rows: repeat(4, auto); /* Four rows of images */
+        gap: 10px;
+    }
+
+    #achievements .images img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        object-position: top;
+        border-radius: 8px;
+    }
+    /* End Achievements Section */
+
+    /* About Section */
+    #about .about {
+        flex-direction: column;
+    }
+
+    #about .col-left {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    #about .about .col-left .about-img::after {
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 0;
+        border: none;
+    }
+
+    #about .col-right {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    #about .col-right h1 {
+        text-align: center;
+    }
+    /* End About Section */
+
+    /* Contact Section */
+    #contact .contact {
+        padding: 50px 0;
+    }
+
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #contact .contact-item {
+        width: 80%;
+        margin: 5% 0;
+        flex-direction: column;
+    }
+
+    #contact .contact-item .icon {
+        height: 70px;
+        width: 70px;
+    }
+
+    #contact .contact-item .contact-info {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    /* End Contact Section */
 }
 /* End Media Query For Smartphone */
